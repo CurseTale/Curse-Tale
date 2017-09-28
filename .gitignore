@@ -32,3 +32,11 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# JetBrains Rider
+.idea/
+# Delete the next two lines and uncomment the following two if more plugins are added later.
+Assets/Plugins/*
+Assets/Plugins.meta
+# Assets/Plugins/Editor/JetBrains/*
+# Assets/Plugins/Editor/JetBrains.meta
