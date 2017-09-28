@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
+// TODO: Extend AbilityCard from Card?
 public class AbilityCard : MonoBehaviour
 {
 
@@ -20,10 +18,18 @@ public class AbilityCard : MonoBehaviour
 		_image.sprite = CardFront;
 	}
 	
+	/// <summary>
+	/// When called, this method flips the card over and (WIP) activates the card's action.
+	/// </summary>
+	/// <remarks>
+	/// This method is called from the button press event on the Ability Card GameObject.
+	/// </remarks>
 	public void FlipCard()
 	{
 		Debug.Log("Flipped " + name);
 		_flipped = !_flipped;
 		_image.sprite = _flipped ? CardBack : CardFront;
+		
+		// TODO: Activate card ability
 	}
 }
