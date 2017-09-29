@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Just used for drawing placeholders in Unity Editor
+/// </summary>
 public class CardSlot : MonoBehaviour {
 	private void OnDrawGizmos()
 	{

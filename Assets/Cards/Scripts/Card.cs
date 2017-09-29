@@ -5,9 +5,9 @@ public class Card : MonoBehaviour
 {
 	[Tooltip("Select Card Front")] public Sprite CardFront;
 	[Tooltip("Select Card Back")] public Sprite CardBack;
+	[HideInInspector] public bool Flipped;
 
 	private Image _image;
-	private bool _flipped;
 	
 	// Use this for initialization
 	void Start ()
@@ -25,8 +25,8 @@ public class Card : MonoBehaviour
 	public void FlipCard()
 	{
 		Debug.Log("Flipped " + name);
-		_flipped = !_flipped;
-		_image.sprite = _flipped ? CardBack : CardFront;
+		Flipped = !Flipped;
+		_image.sprite = Flipped ? CardBack : CardFront;
 		
 		// TODO: Activate card ability
 	}
