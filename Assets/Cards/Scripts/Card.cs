@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-// TODO: Extend AbilityCard from Card?
-public class AbilityCard : MonoBehaviour
+public class Card : MonoBehaviour
 {
-
 	[Tooltip("Select Card Front")] public Sprite CardFront;
 	[Tooltip("Select Card Back")] public Sprite CardBack;
 
